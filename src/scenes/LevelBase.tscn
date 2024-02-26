@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/LevelBase.gd" type="Script" id=3]
+
+[node name="LevelBase" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="LevelObjects" type="Node2D" parent="."]
+
+[node name="CameraContainer" type="Node2D" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="CameraContainer"]
+current = true

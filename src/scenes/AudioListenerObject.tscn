@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="Gradient" id=3]
+offsets = PoolRealArray( 0 )
+colors = PoolColorArray( 0, 1, 0.742188, 1 )
+
+[sub_resource type="GradientTexture2D" id=2]
+gradient = SubResource( 3 )
+width = 10
+height = 10
+
+[node name="AudioListenerObject" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = SubResource( 2 )
+
+[node name="Listener2D" type="Listener2D" parent="."]
+current = true
