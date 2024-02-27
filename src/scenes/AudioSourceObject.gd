@@ -6,22 +6,17 @@ var valid_bus_indexes = []
 
 var in_range = false
 var panner: AudioEffectPanner = null
-var panner_effect_index: int
-var bus_index: int
+var panner_effect_index: int = -1
+var bus_index: int = -1
 var target_pan: float = 0.0
 
 func init_valid_bus_indexes():
-	var i = 0
 	var s: String
 	
 	valid_bus_indexes.clear()
 	
-	while true:
-		i += 1
+	for i in range(AudioServer.bus_count):
 		s = AudioServer.get_bus_name(i)
-		
-		if not s:
-			break
 		
 		if s.substr(0, 12) == "directional_":
 			valid_bus_indexes.append(i)
@@ -41,7 +36,8 @@ func allocate_bus():
 
 func release_bus():
 	AudioServer.set_bus_mute(bus_index, true)
-	AudioServer.remove_bus_effect(bus_index, panner_effect_index)
+	if AudioServer.get_bus_effect_count(bus_index) > 0:
+		AudioServer.remove_bus_effect(bus_index, panner_effect_index)
 	# print("Released ", bus_index)
 
 func _ready():
@@ -117,6 +113,7 @@ func _process(_delta):
 	# this is smooth enough, and also would just cut when too far (maybe max distance should be adjusted)
 	$AudioStreamPlayer.volume_db = get_volume_from_distance(distance)
 	
-	# it works but very choppy!
-	# panner.pan = target_pan
-	panner.pan = smooth(panner.pan, target_pan)
+	# it works but very choppy, even with smooth(), even when updated in
+	# _physics_process(), even when updated by a low interval Timer
+	panner.pan = target_pan
+	# panner.pan = smooth(panner.pan, target_pan)
