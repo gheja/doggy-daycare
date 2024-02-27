@@ -10,25 +10,25 @@
 [node name="LevelBase" parent="." instance=ExtResource( 1 )]
 
 [node name="BlockHorizontalObject3" parent="LevelBase/LevelObjects" index="0" instance=ExtResource( 3 )]
-position = Vector2( -50, 100 )
+position = Vector2( 125, 175 )
 
 [node name="BlockHorizontalObject4" parent="LevelBase/LevelObjects" index="1" instance=ExtResource( 3 )]
-position = Vector2( 50, 100 )
+position = Vector2( 225, 175 )
 
 [node name="BlockHorizontalObject5" parent="LevelBase/LevelObjects" index="2" instance=ExtResource( 3 )]
-position = Vector2( -50, 0 )
+position = Vector2( 125, 75 )
 
 [node name="BlockHorizontalObject6" parent="LevelBase/LevelObjects" index="3" instance=ExtResource( 3 )]
-position = Vector2( 50, 0 )
+position = Vector2( 225, 75 )
 
 [node name="BlockHorizontalObject7" parent="LevelBase/LevelObjects" index="4" instance=ExtResource( 3 )]
-position = Vector2( 150, 0 )
+position = Vector2( 325, 75 )
 
 [node name="BlockVerticalObject" parent="LevelBase/LevelObjects" index="5" instance=ExtResource( 4 )]
-position = Vector2( 175, 75 )
+position = Vector2( 350, 150 )
 
 [node name="BlockVerticalObject2" parent="LevelBase/LevelObjects" index="6" instance=ExtResource( 4 )]
-position = Vector2( -125, 50 )
+position = Vector2( -350, -150 )
 
 [node name="PlayerCharacter" parent="LevelBase/LevelObjects" index="7" instance=ExtResource( 2 )]
 position = Vector2( 34, 64 )
