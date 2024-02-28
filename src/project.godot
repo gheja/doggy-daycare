@@ -18,6 +18,7 @@ config/icon="res://icon.png"
 
 GameState="*res://scenes/GameState.gd"
 Lib="*res://scenes/Lib.gd"
+Signals="*res://scenes/Signals.gd"
 
 [display]
 

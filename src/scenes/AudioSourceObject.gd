@@ -35,6 +35,9 @@ func allocate_bus():
 	return false
 
 func release_bus():
+	if bus_index == -1:
+		return
+	
 	AudioServer.set_bus_mute(bus_index, true)
 	if AudioServer.get_bus_effect_count(bus_index) > 0:
 		AudioServer.remove_bus_effect(bus_index, panner_effect_index)
@@ -117,3 +120,6 @@ func _process(_delta):
 	# _physics_process(), even when updated by a low interval Timer
 	panner.pan = target_pan
 	# panner.pan = smooth(panner.pan, target_pan)
+
+func stop_sound():
+	self.release_bus()
