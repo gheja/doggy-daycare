@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://default_theme.tres" type="Theme" id=1]
+[ext_resource path="res://scenes/Narrator.gd" type="Script" id=2]
+
+[node name="Narrator" type="Control" groups=["narrators"]]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="SubtitleContainer" type="Control" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -385.0
+margin_top = -132.0
+margin_right = 385.0
+margin_bottom = -8.0
+rect_min_size = Vector2( 0, 86 )
+
+[node name="SubtitleLabel" type="Label" parent="SubtitleContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+text = "Hello and welcome to consectetur adipiscing elit. Duis sit amet lobortis odio. Donec elementum, vestibulum in metus ullamcorper tellus ut."
+align = 1
+valign = 2
+autowrap = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+bus = "narrator"
+
+[node name="SpeakTimer" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
+
+[connection signal="timeout" from="SpeakTimer" to="." method="_on_SpeakTimer_timeout"]

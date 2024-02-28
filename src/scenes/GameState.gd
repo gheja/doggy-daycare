@@ -7,5 +7,8 @@ const GAME_STATE_LOST = 4
 const GAME_STATE_UNLOCKED = 5
 
 var player_object: Node2D = null
+var narrator_object: Node2D = null
 
 var state: int = GAME_STATE_NEW
+
+var first_game: bool = true

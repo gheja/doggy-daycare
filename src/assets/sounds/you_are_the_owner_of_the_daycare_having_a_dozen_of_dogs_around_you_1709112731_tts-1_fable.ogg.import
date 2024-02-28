@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/you_are_the_owner_of_the_daycare_having_a_dozen_of_dogs_around_you_1709112731_tts-1_fable.ogg-c3167cd6ff52ca237d1b15d0eec47a4a.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/you_are_the_owner_of_the_daycare_having_a_dozen_of_dogs_around_you_1709112731_tts-1_fable.ogg"
+dest_files=[ "res://.import/you_are_the_owner_of_the_daycare_having_a_dozen_of_dogs_around_you_1709112731_tts-1_fable.ogg-c3167cd6ff52ca237d1b15d0eec47a4a.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

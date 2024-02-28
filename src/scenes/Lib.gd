@@ -15,6 +15,9 @@ func array_pick(a):
 func get_player_object():
 	return Lib.get_first_group_member("player_characters")
 
+func get_narrator_object():
+	return Lib.get_first_group_member("narrators")
+
 func silence(_value):
 	return
 

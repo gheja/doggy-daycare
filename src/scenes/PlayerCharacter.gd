@@ -1,6 +1,6 @@
 extends Node2D
 
-const FINGER_LOCK_DISTANCE = 30
+const FINGER_LOCK_DISTANCE = 20
 const FINGER_UNLOCK_DISTANCE = 100
 
 var locked = false
@@ -13,6 +13,10 @@ func _process(_delta):
 	
 	if not locked:
 		if Lib.dist_2d(mouse_position, self.global_position) < FINGER_LOCK_DISTANCE:
+			if GameState.first_game:
+				Signals.emit_signal("first_game_started")
+				GameState.first_game = false
+			
 			GameState.state = GameState.GAME_STATE_PLAYING
 			locked = true
 		else:
