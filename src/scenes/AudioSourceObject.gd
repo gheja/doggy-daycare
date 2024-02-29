@@ -30,6 +30,7 @@ func release_dam():
 func _ready():
 	$AudioStreamPlayer.pitch_scale = 1.0 + randf() * 0.2 - 0.1
 	$AudioStreamPlayer.stream = AudioManager.get_dog_sleeping_sound()
+	Signals.connect("player_lost", self, "on_player_lost")
 
 func get_distance():
 	return Lib.dist_2d(self.global_position, GameState.player_object.global_position) * distance_correction
@@ -93,3 +94,6 @@ func _process(_delta):
 
 func stop_sound():
 	self.release_dam()
+
+func on_player_lost():
+	stop_sound()

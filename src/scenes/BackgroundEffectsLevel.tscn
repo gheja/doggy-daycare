@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scenes/BackgroundEffectsCommon.gd" type="Script" id=1]
+[ext_resource path="res://assets/sounds/background_noises/257351__klankbeeld__room-tone-calm-9pm-141209_0470.ogg" type="AudioStream" id=2]
+[ext_resource path="res://assets/sounds/background_noises/444659__mirkaelina__citynoise_48k.ogg" type="AudioStream" id=3]
+
+[node name="BackgroundEffectsLevel" type="Node"]
+script = ExtResource( 1 )
+volume_max = -18.0
+
+[node name="LoopSounds" type="Node" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="LoopSounds"]
+stream = ExtResource( 2 )
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="LoopSounds"]
+stream = ExtResource( 3 )
+
+[node name="RandomSounds" type="Node" parent="."]
+
+[node name="Group" type="Node" parent="RandomSounds"]
+
+[node name="RandomSoundsTimer" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
+
+[connection signal="timeout" from="RandomSoundsTimer" to="." method="_on_RandomSoundsTimer_timeout"]

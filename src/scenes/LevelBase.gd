@@ -23,6 +23,8 @@ func _ready():
 	$CameraContainer/Camera2D.current = true
 
 func play_resume():
+	Signals.emit_signal("background_sounds_to_level")
+	
 	if not was_started: 
 		if GameState.first_play_on_this_level:
 			Lib.get_narrator_object().speak_text(level_first_lock_text_index)

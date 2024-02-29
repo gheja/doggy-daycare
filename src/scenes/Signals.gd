@@ -11,3 +11,6 @@ signal speech_finished_sentence
 signal speech_finished_text
 
 signal intro_finished
+signal background_sounds_to_menu
+signal background_sounds_to_level
+signal background_sounds_to_excited

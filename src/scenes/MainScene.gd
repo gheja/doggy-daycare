@@ -22,6 +22,9 @@ func _ready():
 	Signals.connect("finger_locked", self, "on_finger_locked")
 	Signals.connect("finger_unlocked", self, "on_finger_unlocked")
 	Signals.connect("speech_finished_text", self, "on_speech_finished_text")
+	Signals.connect("background_sounds_to_menu", self, "on_background_sounds_to_menu")
+	Signals.connect("background_sounds_to_level", self, "on_background_sounds_to_level")
+	Signals.connect("background_sounds_to_excited", self, "on_background_sounds_to_excited")
 	
 	load_scene_deferred("res://scenes/IntroScene.tscn")
 
@@ -70,11 +73,14 @@ func on_player_won():
 	clear_sounds()
 	Lib.get_narrator_object().speak_text(1)
 	GameState.state = GameState.GAME_STATE_WON
+	Signals.emit_signal("background_sounds_to_menu")
 
 func on_player_lost():
 	clear_sounds()
-	Lib.get_narrator_object().speak_text(2)
+	# to give a bit of time for the excited dogs sound :)
+	$PlayerLostNarrationTimer.start()
 	GameState.state = GameState.GAME_STATE_LOST
+	Signals.emit_signal("background_sounds_to_excited")
 
 func on_first_game_started():
 	Lib.get_narrator_object().speak_text(3)
@@ -98,10 +104,12 @@ func on_speech_finished_text(text_index):
 	print("MainScene.on_speech_finished_text(): text_index: ", text_index)
 	
 	if text_index == 1: # won
-		load_next_level()
+		$LevelLoadTimer.start()
+		# load_next_level()
 	
 	if text_index == 2: # lost
-		reload_level()
+		$LevelLoadTimer.start()
+		# reload_level()
 
 func _on_SceneLoaderTimer_timeout():
 	if not next_scene_to_load:
@@ -109,3 +117,36 @@ func _on_SceneLoaderTimer_timeout():
 	
 	load_scene(next_scene_to_load)
 	next_scene_to_load = null
+
+func on_background_sounds_to_menu():
+	$BackgroundEffectsMenu.fade_in()
+	$BackgroundEffectsLevel.fade_out()
+	$BackgroundEffectsExcited.fade_out()
+	
+	$BackgroundEffectsChangeTimer.stop()
+
+func on_background_sounds_to_level():
+	$BackgroundEffectsMenu.fade_out()
+	$BackgroundEffectsLevel.fade_in()
+	$BackgroundEffectsExcited.fade_out()
+	
+	$BackgroundEffectsChangeTimer.stop()
+
+func on_background_sounds_to_excited():
+	$BackgroundEffectsMenu.fade_out()
+	$BackgroundEffectsLevel.fade_out()
+	$BackgroundEffectsExcited.fade_in()
+	
+	$BackgroundEffectsChangeTimer.start()
+
+func _on_BackgroundEffectsChangeTimer_timeout():
+	on_background_sounds_to_menu()
+
+func _on_LevelLoadTimer_timeout():
+	if GameState.state == GameState.GAME_STATE_WON:
+		load_next_level()
+	elif  GameState.state == GameState.GAME_STATE_LOST:
+		reload_level()
+
+func _on_PlayerLostNarrationTimer_timeout():
+	Lib.get_narrator_object().speak_text(2)
