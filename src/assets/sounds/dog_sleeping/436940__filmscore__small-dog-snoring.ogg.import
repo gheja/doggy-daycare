@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/436940__filmscore__small-dog-snoring.ogg-8d3cfabdc306299ab2a28cbf45e1a2a4.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/dog_sleeping/436940__filmscore__small-dog-snoring.ogg"
+dest_files=[ "res://.import/436940__filmscore__small-dog-snoring.ogg-8d3cfabdc306299ab2a28cbf45e1a2a4.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

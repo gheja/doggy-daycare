@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/444864__alec_havinmaa__dog-snoring.ogg-356fbd8bcdd598eaff23545082d66dd1.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/dog_sleeping/444864__alec_havinmaa__dog-snoring.ogg"
+dest_files=[ "res://.import/444864__alec_havinmaa__dog-snoring.ogg-356fbd8bcdd598eaff23545082d66dd1.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

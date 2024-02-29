@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/65601__becks77__rocco_russa.ogg-c4a482b5cd05a3416a95b2590b4fb585.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/dog_sleeping/65601__becks77__rocco_russa.ogg"
+dest_files=[ "res://.import/65601__becks77__rocco_russa.ogg-c4a482b5cd05a3416a95b2590b4fb585.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

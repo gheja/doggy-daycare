@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/234145__mingusassin__dog-snores.ogg-ace29cccf1db4e16370622a2d0afe2ef.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/dog_sleeping/234145__mingusassin__dog-snores.ogg"
+dest_files=[ "res://.import/234145__mingusassin__dog-snores.ogg-ace29cccf1db4e16370622a2d0afe2ef.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

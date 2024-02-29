@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/185876__gurkboll__dog_is_snoring_20130424t1140.ogg-2eb55e46785c21dd528ec03afb263aa0.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/dog_sleeping/185876__gurkboll__dog_is_snoring_20130424t1140.ogg"
+dest_files=[ "res://.import/185876__gurkboll__dog_is_snoring_20130424t1140.ogg-2eb55e46785c21dd528ec03afb263aa0.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

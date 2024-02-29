@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/443292__ted__little-dog-snoring.ogg-1a41b7ae5ba66eac96f282957cbf05d0.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/dog_sleeping/443292__ted__little-dog-snoring.ogg"
+dest_files=[ "res://.import/443292__ted__little-dog-snoring.ogg-1a41b7ae5ba66eac96f282957cbf05d0.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

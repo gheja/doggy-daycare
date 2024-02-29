@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/562867__buzzatsea__dog-snoring.ogg-150e26726e3f45b8363e954a55a0ec1d.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/dog_sleeping/562867__buzzatsea__dog-snoring.ogg"
+dest_files=[ "res://.import/562867__buzzatsea__dog-snoring.ogg-150e26726e3f45b8363e954a55a0ec1d.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

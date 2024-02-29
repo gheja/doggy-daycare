@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/700316__daddy_z__french-bulldog-snoring.ogg-c27cbc086fb1e4baa1fd6c319b45b55c.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/dog_sleeping/700316__daddy_z__french-bulldog-snoring.ogg"
+dest_files=[ "res://.import/700316__daddy_z__french-bulldog-snoring.ogg-c27cbc086fb1e4baa1fd6c319b45b55c.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

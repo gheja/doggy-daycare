@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/106580__dibubba__opie-snoring-100-2.ogg-3ddc1d61c9f2714a9455409803f67bfb.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/dog_sleeping/106580__dibubba__opie-snoring-100-2.ogg"
+dest_files=[ "res://.import/106580__dibubba__opie-snoring-100-2.ogg-3ddc1d61c9f2714a9455409803f67bfb.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

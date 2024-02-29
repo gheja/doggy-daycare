@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/462926__ddustin99__dog-sleeping_1.ogg-7b3d856a7961e557f2eca8d73a8feace.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/dog_sleeping/462926__ddustin99__dog-sleeping_1.ogg"
+dest_files=[ "res://.import/462926__ddustin99__dog-sleeping_1.ogg-7b3d856a7961e557f2eca8d73a8feace.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

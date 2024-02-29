@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/255129__alba_mtg__sam-snoring.ogg-88f93d3370a7fe134212c950ef790fa4.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/dog_sleeping/255129__alba_mtg__sam-snoring.ogg"
+dest_files=[ "res://.import/255129__alba_mtg__sam-snoring.ogg-88f93d3370a7fe134212c950ef790fa4.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

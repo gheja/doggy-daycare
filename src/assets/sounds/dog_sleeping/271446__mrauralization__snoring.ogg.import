@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/271446__mrauralization__snoring.ogg-f5df7ad40244c0375e3a974f448eae8c.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/dog_sleeping/271446__mrauralization__snoring.ogg"
+dest_files=[ "res://.import/271446__mrauralization__snoring.ogg-f5df7ad40244c0375e3a974f448eae8c.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/543644__5ound5murf23__zoom0025-dog-snore-2_2.ogg-f7aab70c00f44842e5700b5da1e56623.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/dog_sleeping/543644__5ound5murf23__zoom0025-dog-snore-2_2.ogg"
+dest_files=[ "res://.import/543644__5ound5murf23__zoom0025-dog-snore-2_2.ogg-f7aab70c00f44842e5700b5da1e56623.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

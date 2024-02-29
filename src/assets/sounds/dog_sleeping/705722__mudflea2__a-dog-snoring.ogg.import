@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/705722__mudflea2__a-dog-snoring.ogg-6973cafa5677652b4943722516e03f3d.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/dog_sleeping/705722__mudflea2__a-dog-snoring.ogg"
+dest_files=[ "res://.import/705722__mudflea2__a-dog-snoring.ogg-6973cafa5677652b4943722516e03f3d.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
