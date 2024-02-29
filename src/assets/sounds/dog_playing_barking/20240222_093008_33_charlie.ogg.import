@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/20240222_093008_33_charlie.ogg-7295d6e4cd5eebf7093778df22025096.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/dog_playing_barking/20240222_093008_33_charlie.ogg"
+dest_files=[ "res://.import/20240222_093008_33_charlie.ogg-7295d6e4cd5eebf7093778df22025096.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

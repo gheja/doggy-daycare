@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/221496__agfx__dog-retreiver-fast-panting-play-grunt-15_2.ogg-b5a6f46f56865d3962d4f0625ca9a908.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/dog_playing_barking/221496__agfx__dog-retreiver-fast-panting-play-grunt-15_2.ogg"
+dest_files=[ "res://.import/221496__agfx__dog-retreiver-fast-panting-play-grunt-15_2.ogg-b5a6f46f56865d3962d4f0625ca9a908.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

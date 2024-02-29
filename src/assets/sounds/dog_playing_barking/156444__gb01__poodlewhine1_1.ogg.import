@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/156444__gb01__poodlewhine1_1.ogg-a606ab1352b2d7a9ef16e68927b5ea85.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/dog_playing_barking/156444__gb01__poodlewhine1_1.ogg"
+dest_files=[ "res://.import/156444__gb01__poodlewhine1_1.ogg-a606ab1352b2d7a9ef16e68927b5ea85.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

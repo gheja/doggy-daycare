@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/128240__be-steele__stormkloud-sled-dogs.ogg-4b34aa0e5bac4d2bbc448088b06a4793.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/dog_excited/128240__be-steele__stormkloud-sled-dogs.ogg"
+dest_files=[ "res://.import/128240__be-steele__stormkloud-sled-dogs.ogg-4b34aa0e5bac4d2bbc448088b06a4793.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

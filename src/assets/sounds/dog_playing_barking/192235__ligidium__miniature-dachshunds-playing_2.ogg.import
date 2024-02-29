@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/192235__ligidium__miniature-dachshunds-playing_2.ogg-19de78d171627b98233802ea2e214a0d.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/dog_playing_barking/192235__ligidium__miniature-dachshunds-playing_2.ogg"
+dest_files=[ "res://.import/192235__ligidium__miniature-dachshunds-playing_2.ogg-19de78d171627b98233802ea2e214a0d.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

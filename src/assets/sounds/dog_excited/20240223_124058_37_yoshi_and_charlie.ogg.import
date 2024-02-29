@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/20240223_124058_37_yoshi_and_charlie.ogg-e15d2c9e2a16842183e2f5d2fe0aae57.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/dog_excited/20240223_124058_37_yoshi_and_charlie.ogg"
+dest_files=[ "res://.import/20240223_124058_37_yoshi_and_charlie.ogg-e15d2c9e2a16842183e2f5d2fe0aae57.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/338941__klankbeeld__police-dog-practice-160305_0861_1.ogg-1b7c69b0fb703af20e7979ec346f4760.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/background_noises/338941__klankbeeld__police-dog-practice-160305_0861_1.ogg"
+dest_files=[ "res://.import/338941__klankbeeld__police-dog-practice-160305_0861_1.ogg-1b7c69b0fb703af20e7979ec346f4760.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

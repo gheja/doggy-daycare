@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/444659__mirkaelina__citynoise_48k.ogg-4860968edddf4e95a9caa590240ff858.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/background_noises/444659__mirkaelina__citynoise_48k.ogg"
+dest_files=[ "res://.import/444659__mirkaelina__citynoise_48k.ogg-4860968edddf4e95a9caa590240ff858.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

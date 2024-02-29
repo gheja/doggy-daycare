@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/169143__5demayo__dachshund-play-growling_2.ogg-3a9961bfc2610784441dc28fa78269ff.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/dog_playing_barking/169143__5demayo__dachshund-play-growling_2.ogg"
+dest_files=[ "res://.import/169143__5demayo__dachshund-play-growling_2.ogg-3a9961bfc2610784441dc28fa78269ff.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

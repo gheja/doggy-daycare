@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/256646__vollkornbrot__dog.ogg-f6670eca17af972fd9d9607dddcbf298.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/dog_playing_barking/256646__vollkornbrot__dog.ogg"
+dest_files=[ "res://.import/256646__vollkornbrot__dog.ogg-f6670eca17af972fd9d9607dddcbf298.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

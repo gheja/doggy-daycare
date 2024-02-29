@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/20240222 183917 36.ogg-1c6f9ea1afa7f04b9238d48911e4900e.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/dog_playing_barking/20240222 183917 36.ogg"
+dest_files=[ "res://.import/20240222 183917 36.ogg-1c6f9ea1afa7f04b9238d48911e4900e.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

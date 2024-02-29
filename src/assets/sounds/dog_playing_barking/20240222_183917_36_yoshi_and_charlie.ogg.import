@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/20240222_183917_36_yoshi_and_charlie.ogg-456159ccf8f96fec416a90fae7c2ffa9.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/dog_playing_barking/20240222_183917_36_yoshi_and_charlie.ogg"
+dest_files=[ "res://.import/20240222_183917_36_yoshi_and_charlie.ogg-456159ccf8f96fec416a90fae7c2ffa9.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/197185__gladkiy__jack_russel_terrier_plays_growl_breathe_2.ogg-ea60dc32651ecfd1554f2a8967a31e6d.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/dog_playing_barking/197185__gladkiy__jack_russel_terrier_plays_growl_breathe_2.ogg"
+dest_files=[ "res://.import/197185__gladkiy__jack_russel_terrier_plays_growl_breathe_2.ogg-ea60dc32651ecfd1554f2a8967a31e6d.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
