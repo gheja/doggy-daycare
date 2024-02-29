@@ -51,6 +51,9 @@ func release_dam(index: int):
 func get_bus_name(i: int):
 	return AudioServer.get_bus_name(parameters[i][0])
 
+func smooth(a: float, b: float):
+	return a + (b - a) * 0.05
+
 func process():
 	var bus_index: int
 	var panner: AudioEffectPanner
@@ -70,10 +73,10 @@ func process():
 		panner = param[3] as AudioEffectPanner
 		
 		if abs(AudioServer.get_bus_volume_db(bus_index) - param[1]) > 0.01:
-			AudioServer.set_bus_volume_db(bus_index, param[1])
+			AudioServer.set_bus_volume_db(bus_index, smooth(AudioServer.get_bus_volume_db(bus_index), param[1]))
 		
 		if abs(panner.pan - param[2]) > 0.01:
-			panner.pan = param[2]
+			panner.pan = smooth(panner.pan, param[2])
 
 ### threading
 

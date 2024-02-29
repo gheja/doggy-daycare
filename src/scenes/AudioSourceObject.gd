@@ -28,10 +28,6 @@ func release_dam():
 	DirectionalAudioManager.release_dam(dam_index)
 
 func _ready():
-	###
-	### NOTE: all bus names should start with "directional_" and be muted at start!
-	###
-	
 	$AudioStreamPlayer.pitch_scale = 1.0 + randf() * 0.2 - 0.1
 	$AudioStreamPlayer.stream = AudioManager.get_dog_sleeping_sound()
 

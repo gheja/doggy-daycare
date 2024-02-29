@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://scenes/LevelBase.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/PlayerCharacter.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/BlockHorizontalObject.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/BlockVerticalObject.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/GoalObject.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/BlockMiddleObject.tscn" type="PackedScene" id=6]
 
 [node name="Level1" type="Node2D"]
 
@@ -42,11 +43,47 @@ position = Vector2( 225, 25 )
 position = Vector2( 125, 125 )
 
 [node name="BlockVerticalObject2" parent="LevelBase/LevelObjects" index="10" instance=ExtResource( 4 )]
+position = Vector2( -75, -50 )
+
+[node name="BlockVerticalObject4" parent="LevelBase/LevelObjects" index="11" instance=ExtResource( 4 )]
+position = Vector2( -75, 50 )
+
+[node name="BlockMiddleObject" parent="LevelBase/LevelObjects" index="12" instance=ExtResource( 6 )]
+position = Vector2( -50, 50 )
+
+[node name="BlockMiddleObject2" parent="LevelBase/LevelObjects" index="13" instance=ExtResource( 6 )]
 position = Vector2( -75, 0 )
 
-[node name="GoalObject" parent="LevelBase/LevelObjects" index="11" instance=ExtResource( 5 )]
+[node name="BlockMiddleObject3" parent="LevelBase/LevelObjects" index="14" instance=ExtResource( 6 )]
+position = Vector2( -50, -50 )
+
+[node name="BlockMiddleObject4" parent="LevelBase/LevelObjects" index="15" instance=ExtResource( 6 )]
+position = Vector2( 50, -50 )
+
+[node name="BlockMiddleObject5" parent="LevelBase/LevelObjects" index="16" instance=ExtResource( 6 )]
+position = Vector2( 50, 50 )
+
+[node name="BlockMiddleObject6" parent="LevelBase/LevelObjects" index="17" instance=ExtResource( 6 )]
+position = Vector2( 150, -50 )
+
+[node name="BlockMiddleObject7" parent="LevelBase/LevelObjects" index="18" instance=ExtResource( 6 )]
+position = Vector2( 225, -25 )
+
+[node name="BlockMiddleObject8" parent="LevelBase/LevelObjects" index="19" instance=ExtResource( 6 )]
+position = Vector2( 250, 50 )
+
+[node name="BlockMiddleObject9" parent="LevelBase/LevelObjects" index="20" instance=ExtResource( 6 )]
+position = Vector2( 250, 150 )
+
+[node name="BlockMiddleObject10" parent="LevelBase/LevelObjects" index="21" instance=ExtResource( 6 )]
+position = Vector2( 150, 150 )
+
+[node name="BlockMiddleObject11" parent="LevelBase/LevelObjects" index="22" instance=ExtResource( 6 )]
+position = Vector2( 125, 75 )
+
+[node name="GoalObject" parent="LevelBase/LevelObjects" index="23" instance=ExtResource( 5 )]
 position = Vector2( 350, 100 )
 
-[node name="PlayerCharacter" parent="LevelBase/LevelObjects" index="12" instance=ExtResource( 2 )]
+[node name="PlayerCharacter" parent="LevelBase/LevelObjects" index="24" instance=ExtResource( 2 )]
 
 [editable path="LevelBase"]

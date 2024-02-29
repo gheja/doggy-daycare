@@ -1,46 +1,43 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://scenes/AudioSourceObject.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/BlockCommonObject.gd" type="Script" id=2]
 
-[sub_resource type="Gradient" id=1]
+[sub_resource type="Gradient" id=6]
 offsets = PoolRealArray( 0 )
 colors = PoolColorArray( 1, 1, 1, 1 )
 
-[sub_resource type="GradientTexture2D" id=4]
-gradient = SubResource( 1 )
-width = 50
-height = 100
+[sub_resource type="GradientTexture2D" id=7]
+gradient = SubResource( 6 )
+width = 12
+height = 12
 
 [sub_resource type="Gradient" id=3]
 offsets = PoolRealArray( 0.0167598 )
 colors = PoolColorArray( 0, 0, 0, 0.588235 )
 
-[sub_resource type="GradientTexture2D" id=5]
+[sub_resource type="GradientTexture2D" id=4]
 gradient = SubResource( 3 )
-width = 36
-height = 86
+width = 10
+height = 10
 
-[sub_resource type="RectangleShape2D" id=6]
-extents = Vector2( 18, 43 )
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 5, 5 )
 
-[node name="BlockVerticalObject" type="Node2D"]
+[node name="BlockMiddleObject" type="Node2D"]
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
 modulate = Color( 0.423529, 0, 0, 1 )
-texture = SubResource( 4 )
+texture = SubResource( 7 )
 
 [node name="Sprite2" type="Sprite" parent="."]
 modulate = Color( 0.423529, 0, 0, 1 )
-position = Vector2( -1.78814e-07, -7.15256e-07 )
-texture = SubResource( 5 )
-
-[node name="AudioSourceObject" parent="." instance=ExtResource( 1 )]
+position = Vector2( -7.15256e-07, 1.78814e-07 )
+texture = SubResource( 4 )
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-shape = SubResource( 6 )
+shape = SubResource( 5 )
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
