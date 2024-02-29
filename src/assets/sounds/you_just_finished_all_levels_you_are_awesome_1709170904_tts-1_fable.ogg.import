@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/you_just_finished_all_levels_you_are_awesome_1709170904_tts-1_fable.ogg-17334af5e460f9ac71aa74a9c03db3f7.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/you_just_finished_all_levels_you_are_awesome_1709170904_tts-1_fable.ogg"
+dest_files=[ "res://.import/you_just_finished_all_levels_you_are_awesome_1709170904_tts-1_fable.ogg-17334af5e460f9ac71aa74a9c03db3f7.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

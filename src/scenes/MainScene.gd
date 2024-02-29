@@ -58,7 +58,7 @@ func reload_level():
 func load_next_level():
 	print("Load next level")
 	if level_index >= levels.size() - 1:
-		
+		Lib.get_narrator_object().speak_text(10)
 		return
 	
 	load_level(level_index + 1)
@@ -74,7 +74,6 @@ func on_player_lost():
 	GameState.state = GameState.GAME_STATE_LOST
 
 func on_first_game_started():
-	print("!!!")
 	Lib.get_narrator_object().speak_text(3)
 
 func on_intro_finished():
