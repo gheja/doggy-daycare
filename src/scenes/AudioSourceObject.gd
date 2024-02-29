@@ -10,6 +10,8 @@ var panner_effect_index: int = -1
 var bus_index: int = -1
 var target_pan: float = 0.0
 
+var distance_correction = 1.0
+
 func init_valid_bus_indexes():
 	var s: String
 	
@@ -51,9 +53,11 @@ func _ready():
 	init_valid_bus_indexes()
 	$AudioStreamPlayer.pitch_scale = 1.0 + randf() * 0.2 - 0.1
 	panner = AudioEffectPanner.new()
+	
+	$AudioStreamPlayer.stream = AudioManager.get_dog_sleeping_sound()
 
 func get_distance():
-	return Lib.dist_2d(self.global_position, GameState.player_object.global_position)
+	return Lib.dist_2d(self.global_position, GameState.player_object.global_position) * distance_correction
 
 func get_volume_from_distance(distance: float):
 	# brought to you by guessing till sounds about right
