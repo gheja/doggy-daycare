@@ -1,5 +1,6 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
+[ext_resource path="res://scenes/TitleOverlay.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/MainScene.gd" type="Script" id=2]
 [ext_resource path="res://scenes/LevelCoverScene.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/Narrator.tscn" type="PackedScene" id=4]
@@ -17,6 +18,10 @@ margin_left = -400.0
 margin_top = -225.0
 margin_right = -400.0
 margin_bottom = -225.0
+
+[node name="TitleOverlay" parent="." instance=ExtResource( 1 )]
+margin_left = -400.0
+margin_right = -400.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true

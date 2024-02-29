@@ -32,7 +32,9 @@ func handle_keyboard_and_gamepad():
 		target_position = self.global_position
 		GameState.state = GameState.GAME_STATE_PLAYING
 		Signals.emit_signal("finger_locked")
-	
+		
+		# skip the first interaction to remain in center
+		return
 	
 	target_position += direction * 25
 	
@@ -60,13 +62,13 @@ func handle_mouse_and_touch():
 	target_position = mouse_position
 
 func move_to_target():
-	self.global_position += (target_position - self.global_position) * 0.25
+	self.global_position += (target_position - self.global_position) * 0.2
 
 func _process(_delta):
 	if GameState.state != GameState.GAME_STATE_PLAYING and GameState.state != GameState.GAME_STATE_UNLOCKED:
 		return
 	
 	handle_keyboard_and_gamepad()
-	handle_mouse_and_touch()
+	if not keyboard_detected:
+		handle_mouse_and_touch()
 	move_to_target()
-

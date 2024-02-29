@@ -23,7 +23,7 @@ func _ready():
 	Signals.connect("finger_unlocked", self, "on_finger_unlocked")
 	Signals.connect("speech_finished_text", self, "on_speech_finished_text")
 	
-	load_scene_deferred("res://scenes/TitleScene.tscn")
+	load_scene_deferred("res://scenes/IntroScene.tscn")
 
 func _process(_delta):
 	pass
