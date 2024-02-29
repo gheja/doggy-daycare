@@ -18,6 +18,9 @@ func _ready():
 	update_boundaries()
 
 func _process(_delta):
+	if GameState.state != GameState.GAME_STATE_PLAYING:
+		return
+	
 	$AudioSourceObject.global_position.x = min(max(GameState.player_object.global_position.x, top_left.x), bottom_right.x)
 	$AudioSourceObject.global_position.y = min(max(GameState.player_object.global_position.y, top_left.y), bottom_right.y)
 

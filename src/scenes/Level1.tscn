@@ -6,7 +6,7 @@
 [ext_resource path="res://scenes/BlockVerticalObject.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/GoalObject.tscn" type="PackedScene" id=5]
 
-[node name="LevelTest1" type="Node2D"]
+[node name="Level1" type="Node2D"]
 
 [node name="LevelBase" parent="." instance=ExtResource( 1 )]
 level_first_lock_text_index = 3

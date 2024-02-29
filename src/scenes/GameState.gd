@@ -12,3 +12,4 @@ var narrator_object: Node2D = null
 var state: int = GAME_STATE_NEW
 
 var first_game: bool = true
+var first_play_on_this_level: bool = true

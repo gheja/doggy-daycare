@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/on_the_second_day_you_have_even_more_dogs_1709164954_tts-1_fable.ogg-4b6cd8c232f1434ebc52f7b97bd412d6.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/on_the_second_day_you_have_even_more_dogs_1709164954_tts-1_fable.ogg"
+dest_files=[ "res://.import/on_the_second_day_you_have_even_more_dogs_1709164954_tts-1_fable.ogg-4b6cd8c232f1434ebc52f7b97bd412d6.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

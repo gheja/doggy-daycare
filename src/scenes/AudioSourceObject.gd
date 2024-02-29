@@ -83,6 +83,9 @@ func smooth(a: float, b: float):
 	return a + (b - a) * 0.025
 
 func _process(_delta):
+	if GameState.state != GameState.GAME_STATE_PLAYING:
+		return
+	
 	var distance = get_distance()
 	
 	if distance > MAX_DISTANCE:
