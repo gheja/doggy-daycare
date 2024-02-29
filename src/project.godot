@@ -20,6 +20,7 @@ GameState="*res://scenes/GameState.gd"
 Lib="*res://scenes/Lib.gd"
 Signals="*res://scenes/Signals.gd"
 AudioManager="*res://scenes/AudioManager.gd"
+DirectionalAudioManager="*res://scenes/DirectionalAudioManager.gd"
 
 [display]
 

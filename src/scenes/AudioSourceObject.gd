@@ -2,58 +2,37 @@ extends Node2D
 
 const MAX_DISTANCE = 60
 
-var valid_bus_indexes = []
-
 var in_range = false
-var panner: AudioEffectPanner = null
-var panner_effect_index: int = -1
-var bus_index: int = -1
-var target_pan: float = 0.0
+var dam_index: int = -1
 
 var distance_correction = 1.0
 
-func init_valid_bus_indexes():
-	var s: String
+func allocate_dam():
+	var i = DirectionalAudioManager.allocate_dam()
 	
-	valid_bus_indexes.clear()
+	if i == -1:
+		return false
 	
-	for i in range(AudioServer.bus_count):
-		s = AudioServer.get_bus_name(i)
-		
-		if s.substr(0, 12) == "directional_":
-			valid_bus_indexes.append(i)
+	dam_index = i
+	
+	print("allocated ", dam_index)
+	
+	return true
 
-func allocate_bus():
-	for i in valid_bus_indexes:
-		if AudioServer.is_bus_mute(i):
-			bus_index = i
-			panner_effect_index = AudioServer.get_bus_effect_count(bus_index)
-			AudioServer.add_bus_effect(bus_index, panner)
-			# AudioServer.set_bus_volume_db(bus_index, -100)
-			AudioServer.set_bus_mute(i, false)
-			# print("Allocated ", i)
-			return true
-	
-	return false
-
-func release_bus():
-	if bus_index == -1:
+func release_dam():
+	if dam_index == -1:
 		return
 	
-	AudioServer.set_bus_mute(bus_index, true)
-	if AudioServer.get_bus_effect_count(bus_index) > 0:
-		AudioServer.remove_bus_effect(bus_index, panner_effect_index)
-	# print("Released ", bus_index)
+	print("releasing ", dam_index)
+	
+	DirectionalAudioManager.release_dam(dam_index)
 
 func _ready():
 	###
 	### NOTE: all bus names should start with "directional_" and be muted at start!
 	###
 	
-	init_valid_bus_indexes()
 	$AudioStreamPlayer.pitch_scale = 1.0 + randf() * 0.2 - 0.1
-	panner = AudioEffectPanner.new()
-	
 	$AudioStreamPlayer.stream = AudioManager.get_dog_sleeping_sound()
 
 func get_distance():
@@ -99,34 +78,22 @@ func _process(_delta):
 	
 	if not in_range:
 		if $AudioStreamPlayer.playing:
-			release_bus()
+			release_dam()
 			$AudioStreamPlayer.stop()
 			$Sprite.modulate = Color(0.0, 0.8, 1.0, 0.25)
 		return
 	
-	target_pan = get_pan()
-	
 	if not $AudioStreamPlayer.playing:
-		$AudioStreamPlayer.volume_db = -100
-		
-		if not allocate_bus():
+		if not allocate_dam():
 			$Sprite.modulate = Color(1.0, 0.0, 0.0, 1.0)
 			return
 		
 		$Sprite.modulate = Color(0.0, 0.8, 1.0, 1.0)
-		$AudioStreamPlayer.bus = AudioServer.get_bus_name(bus_index)
+		$AudioStreamPlayer.bus = DirectionalAudioManager.get_bus_name(dam_index)
 		$AudioStreamPlayer.play()
-		
-		# start the sound from the correct position
-		panner.pan = target_pan
 	
-	# this is smooth enough, and also would just cut when too far (maybe max distance should be adjusted)
-	$AudioStreamPlayer.volume_db = get_volume_from_distance(distance)
-	
-	# it works but very choppy, even with smooth(), even when updated in
-	# _physics_process(), even when updated by a low interval Timer
-	panner.pan = target_pan
-	# panner.pan = smooth(panner.pan, target_pan)
+	DirectionalAudioManager.set_pan(dam_index, get_pan())
+	DirectionalAudioManager.set_volume(dam_index, get_volume_from_distance(distance))
 
 func stop_sound():
-	self.release_bus()
+	self.release_dam()

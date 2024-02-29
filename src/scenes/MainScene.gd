@@ -12,6 +12,9 @@ var next_scene_to_load = null
 func _ready():
 	Engine.set_target_fps(60)
 	
+	DirectionalAudioManager.init()
+	DirectionalAudioManager.start()
+	
 	Signals.connect("player_won", self, "on_player_won")
 	Signals.connect("player_lost", self, "on_player_lost")
 	Signals.connect("first_game_started", self, "on_first_game_started")
