@@ -25,4 +25,5 @@ func _process(_delta):
 	$AudioSourceObject.global_position.y = min(max(GameState.player_object.global_position.y, top_left.y), bottom_right.y)
 
 func _on_Area2D_area_entered(area):
-		Signals.emit_signal("player_lost")
+	print("player lost, sound: ", $AudioSourceObject/AudioStreamPlayer.stream.resource_path)
+	Signals.emit_signal("player_lost")
