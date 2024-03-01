@@ -65,8 +65,9 @@ func process():
 		
 		# print("DAM: process bus_index ", bus_index)
 		
-		if param[4] == false: # in_use
-			continue
+		### as disabled sounds also need fade out
+		# if param[4] == false: # in_use
+		# 	continue
 		
 		# print(param)
 		
