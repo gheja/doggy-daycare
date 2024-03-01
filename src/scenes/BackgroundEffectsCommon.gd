@@ -28,6 +28,9 @@ func fade_out():
 #	random_sound_chance_target = 0.0
 
 func _ready():
+	volume_target = volume_min
+	random_sound_chance = random_chance_min
+
 	for player in $LoopSounds.get_children():
 		player.volume_db = -100.0
 		player.play()
