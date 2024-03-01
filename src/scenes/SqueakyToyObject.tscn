@@ -1,0 +1,61 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://scenes/SqueakyToyObject.gd" type="Script" id=1]
+[ext_resource path="res://assets/sounds/245083__aiyumi__squeak-toy-squeeze_full01.ogg" type="AudioStream" id=2]
+[ext_resource path="res://assets/sounds/629986__flem0527__knocking-on-wood-door-2.ogg" type="AudioStream" id=3]
+
+[sub_resource type="Gradient" id=6]
+offsets = PoolRealArray( 0 )
+colors = PoolColorArray( 1, 1, 1, 1 )
+
+[sub_resource type="GradientTexture2D" id=7]
+gradient = SubResource( 6 )
+width = 58
+height = 58
+
+[sub_resource type="Gradient" id=10]
+offsets = PoolRealArray( 0.0167598 )
+colors = PoolColorArray( 0, 0, 0, 0.588235 )
+
+[sub_resource type="GradientTexture2D" id=11]
+gradient = SubResource( 10 )
+width = 34
+height = 34
+use_hdr = true
+
+[sub_resource type="CircleShape2D" id=8]
+radius = 29.0
+
+[sub_resource type="CircleShape2D" id=9]
+radius = 17.0
+
+[node name="SqueakyObject" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+modulate = Color( 1, 0, 0, 1 )
+texture = SubResource( 7 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+modulate = Color( 0.423529, 0, 0, 1 )
+position = Vector2( -7.15256e-07, 1.78814e-07 )
+texture = SubResource( 11 )
+
+[node name="Area2DWarn" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DWarn"]
+shape = SubResource( 8 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 9 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 2 )
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 3 )
+
+[connection signal="area_entered" from="Area2DWarn" to="." method="_on_Area2DWarn_area_entered"]
+[connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]

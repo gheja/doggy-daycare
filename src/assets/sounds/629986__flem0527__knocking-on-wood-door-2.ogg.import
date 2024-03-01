@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/629986__flem0527__knocking-on-wood-door-2.ogg-d7fbdc81dd6114f928955365d78b6c83.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/629986__flem0527__knocking-on-wood-door-2.ogg"
+dest_files=[ "res://.import/629986__flem0527__knocking-on-wood-door-2.ogg-d7fbdc81dd6114f928955365d78b6c83.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
