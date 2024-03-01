@@ -2,7 +2,8 @@ extends Node
 
 var levels = [
 	"res://scenes/Level1.tscn",
-	"res://scenes/Level2.tscn"
+	"res://scenes/Level2.tscn",
+	"res://scenes/Level3.tscn",
 ]
 
 var level_index = -1
@@ -29,7 +30,8 @@ func _ready():
 	load_scene_deferred("res://scenes/IntroScene.tscn")
 
 func _process(_delta):
-	pass
+	if Input.is_action_just_pressed("action_debug"):
+		$LevelCoverScene.modulate = Color(1.0, 1.0, 1.0, 0.75)
 
 func load_scene(path):
 	var tmp = load(path).instance()
@@ -120,6 +122,7 @@ func _on_SceneLoaderTimer_timeout():
 	next_scene_to_load = null
 
 func on_background_sounds_to_menu():
+	print("on_background_sounds_to_menu")
 	$BackgroundEffectsMenu.fade_in()
 	$BackgroundEffectsLevel.fade_out()
 	$BackgroundEffectsExcited.fade_out()
@@ -127,6 +130,7 @@ func on_background_sounds_to_menu():
 	$BackgroundEffectsChangeTimer.stop()
 
 func on_background_sounds_to_level():
+	print("on_background_sounds_to_level")
 	$BackgroundEffectsMenu.fade_out()
 	$BackgroundEffectsLevel.fade_in()
 	$BackgroundEffectsExcited.fade_out()
@@ -134,6 +138,7 @@ func on_background_sounds_to_level():
 	$BackgroundEffectsChangeTimer.stop()
 
 func on_background_sounds_to_excited():
+	print("on_background_sounds_to_excited")
 	$BackgroundEffectsMenu.fade_out()
 	$BackgroundEffectsLevel.fade_out()
 	$BackgroundEffectsExcited.fade_in()

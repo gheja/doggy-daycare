@@ -10,6 +10,7 @@
 script = ExtResource( 1 )
 volume_max = 0.0
 random_chance_min = 1.0
+volume_change_rate = 0.05
 
 [node name="LoopSounds" type="Node" parent="."]
 

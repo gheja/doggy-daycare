@@ -4,6 +4,8 @@ export var volume_min = -80.0
 export var volume_max = -25.0
 export var random_chance_min = 0.0
 export var random_chance_max = 1.0
+export var volume_change_rate = 0.03
+export var random_sound_chance_change_rate = 0.005
 
 var volume = -100.0
 var volume_target = -100.0
@@ -31,8 +33,8 @@ func _ready():
 		player.play()
 
 func _process(_delta):
-	random_sound_chance = random_sound_chance + (random_sound_chance_target - random_sound_chance) * 0.005
-	volume = volume + (volume_target - volume) * 0.03
+	random_sound_chance = random_sound_chance + (random_sound_chance_target - random_sound_chance) * random_sound_chance_change_rate
+	volume = volume + (volume_target - volume) * volume_change_rate
 	
 	for player in $LoopSounds.get_children():
 		player.volume_db = volume

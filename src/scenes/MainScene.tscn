@@ -15,7 +15,6 @@ script = ExtResource( 2 )
 [node name="SceneContainer" type="Node2D" parent="."]
 
 [node name="LevelCoverScene" parent="." instance=ExtResource( 3 )]
-modulate = Color( 1, 1, 1, 0.784314 )
 
 [node name="Narrator" parent="." instance=ExtResource( 4 )]
 margin_left = -400.0
