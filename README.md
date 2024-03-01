@@ -29,4 +29,4 @@ As this is mostly an audio game, headphones are recommended.
   - Sounds - Freesound
   - Narration - OpenAI TTS
 
-Detailed credits and licenses: licenses.md
+Detailed credits and licenses: [licenses.md](licenses.md)
