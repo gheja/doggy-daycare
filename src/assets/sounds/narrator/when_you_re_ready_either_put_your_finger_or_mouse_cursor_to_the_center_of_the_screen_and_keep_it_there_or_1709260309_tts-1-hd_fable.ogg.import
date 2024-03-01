@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/when_you_re_ready_either_put_your_finger_or_mouse_cursor_to_the_center_of_the_screen_and_keep_it_there_or_1709260309_tts-1-hd_fable.ogg-5b61ca97a80aaaab5e42c556baf7fc3e.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/narrator/when_you_re_ready_either_put_your_finger_or_mouse_cursor_to_the_center_of_the_screen_and_keep_it_there_or_1709260309_tts-1-hd_fable.ogg"
+dest_files=[ "res://.import/when_you_re_ready_either_put_your_finger_or_mouse_cursor_to_the_center_of_the_screen_and_keep_it_there_or_1709260309_tts-1-hd_fable.ogg-5b61ca97a80aaaab5e42c556baf7fc3e.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

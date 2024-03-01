@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/thanks_1709260333_tts-1-hd_fable.ogg-6ab2318407fda76e4bfa56dba2889471.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/narrator/thanks_1709260333_tts-1-hd_fable.ogg"
+dest_files=[ "res://.import/thanks_1709260333_tts-1-hd_fable.ogg-6ab2318407fda76e4bfa56dba2889471.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

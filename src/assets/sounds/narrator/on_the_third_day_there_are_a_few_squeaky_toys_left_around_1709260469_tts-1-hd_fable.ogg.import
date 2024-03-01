@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/on_the_third_day_there_are_a_few_squeaky_toys_left_around_1709260469_tts-1-hd_fable.ogg-aeaf370802d1b6c504a4fbbcac0eda2c.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/narrator/on_the_third_day_there_are_a_few_squeaky_toys_left_around_1709260469_tts-1-hd_fable.ogg"
+dest_files=[ "res://.import/on_the_third_day_there_are_a_few_squeaky_toys_left_around_1709260469_tts-1-hd_fable.ogg-aeaf370802d1b6c504a4fbbcac0eda2c.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/move_your_finger_or_cursor_to_the_center_or_press_a_direction_key_1709260435_tts-1-hd_fable.ogg-b5516675574e5a50788de9133c9e3d46.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/narrator/move_your_finger_or_cursor_to_the_center_or_press_a_direction_key_1709260435_tts-1-hd_fable.ogg"
+dest_files=[ "res://.import/move_your_finger_or_cursor_to_the_center_or_press_a_direction_key_1709260435_tts-1-hd_fable.ogg-b5516675574e5a50788de9133c9e3d46.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

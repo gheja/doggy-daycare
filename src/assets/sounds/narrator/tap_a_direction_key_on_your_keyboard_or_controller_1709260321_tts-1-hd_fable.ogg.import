@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/tap_a_direction_key_on_your_keyboard_or_controller_1709260321_tts-1-hd_fable.ogg-33eecb9ff59e7fee0b8a7d1711f22907.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/narrator/tap_a_direction_key_on_your_keyboard_or_controller_1709260321_tts-1-hd_fable.ogg"
+dest_files=[ "res://.import/tap_a_direction_key_on_your_keyboard_or_controller_1709260321_tts-1-hd_fable.ogg-33eecb9ff59e7fee0b8a7d1711f22907.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

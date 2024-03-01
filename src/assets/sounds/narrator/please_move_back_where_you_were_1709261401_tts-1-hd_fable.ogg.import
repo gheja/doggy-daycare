@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/please_move_back_where_you_were_1709261401_tts-1-hd_fable.ogg-c45c8b2e5dab1b97b8e188540c689792.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/narrator/please_move_back_where_you_were_1709261401_tts-1-hd_fable.ogg"
+dest_files=[ "res://.import/please_move_back_where_you_were_1709261401_tts-1-hd_fable.ogg-c45c8b2e5dab1b97b8e188540c689792.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/you_are_the_owner_of_the_place_and_have_a_dozen_dogs_around_you_1709260224_tts-1-hd_fable.ogg-e905de91794b5ad3d3972ab4a0be8baa.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/narrator/you_are_the_owner_of_the_place_and_have_a_dozen_dogs_around_you_1709260224_tts-1-hd_fable.ogg"
+dest_files=[ "res://.import/you_are_the_owner_of_the_place_and_have_a_dozen_dogs_around_you_1709260224_tts-1-hd_fable.ogg-e905de91794b5ad3d3972ab4a0be8baa.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

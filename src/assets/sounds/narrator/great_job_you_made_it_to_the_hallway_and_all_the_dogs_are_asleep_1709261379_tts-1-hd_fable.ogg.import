@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/great_job_you_made_it_to_the_hallway_and_all_the_dogs_are_asleep_1709261379_tts-1-hd_fable.ogg-71ab072c9c233db7b2ad2179207541ea.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/narrator/great_job_you_made_it_to_the_hallway_and_all_the_dogs_are_asleep_1709261379_tts-1-hd_fable.ogg"
+dest_files=[ "res://.import/great_job_you_made_it_to_the_hallway_and_all_the_dogs_are_asleep_1709261379_tts-1-hd_fable.ogg-71ab072c9c233db7b2ad2179207541ea.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

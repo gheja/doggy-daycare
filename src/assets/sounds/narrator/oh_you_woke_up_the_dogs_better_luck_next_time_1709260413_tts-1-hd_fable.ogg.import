@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/oh_you_woke_up_the_dogs_better_luck_next_time_1709260413_tts-1-hd_fable.ogg-ab961cfb56f80cfd84a7e6efce3f1a80.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/narrator/oh_you_woke_up_the_dogs_better_luck_next_time_1709260413_tts-1-hd_fable.ogg"
+dest_files=[ "res://.import/oh_you_woke_up_the_dogs_better_luck_next_time_1709260413_tts-1-hd_fable.ogg-ab961cfb56f80cfd84a7e6efce3f1a80.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

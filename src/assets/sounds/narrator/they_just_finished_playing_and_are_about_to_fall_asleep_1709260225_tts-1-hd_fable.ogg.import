@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/they_just_finished_playing_and_are_about_to_fall_asleep_1709260225_tts-1-hd_fable.ogg-5dd1f12326b2a2875dc58cf5b4ad4877.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/narrator/they_just_finished_playing_and_are_about_to_fall_asleep_1709260225_tts-1-hd_fable.ogg"
+dest_files=[ "res://.import/they_just_finished_playing_and_are_about_to_fall_asleep_1709260225_tts-1-hd_fable.ogg-5dd1f12326b2a2875dc58cf5b4ad4877.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

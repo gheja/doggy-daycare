@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/you_are_in_the_middle_of_the_room_try_to_reach_the_door_without_waking_anyone_up_1709261333_tts-1-hd_fable.ogg-69ca8026dc8dc243ff62696f9cc37f7c.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/narrator/you_are_in_the_middle_of_the_room_try_to_reach_the_door_without_waking_anyone_up_1709261333_tts-1-hd_fable.ogg"
+dest_files=[ "res://.import/you_are_in_the_middle_of_the_room_try_to_reach_the_door_without_waking_anyone_up_1709261333_tts-1-hd_fable.ogg-69ca8026dc8dc243ff62696f9cc37f7c.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
