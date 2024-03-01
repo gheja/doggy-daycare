@@ -79,17 +79,24 @@ func process():
 		if abs(panner.pan - param[2]) > 0.01:
 			panner.pan = smooth(panner.pan, param[2])
 
+func _process(_delta):
+	process()
+
 ### threading
 
 var thread: Thread
 var stopping = false
 
 func start():
+	return
+	
 	print("DAM: start")
 	thread = Thread.new()
 	thread.start(self, "main_loop", null, Thread.PRIORITY_HIGH)
 
 func stop():
+	return
+	
 	print("DAM: stop")
 	if not thread:
 		return
@@ -98,11 +105,15 @@ func stop():
 	thread.wait_to_finish()
 
 func main_loop():
+	return
+	
 	while not stopping:
 		process()
 		# OS.delay_usec(200000)
 		OS.delay_msec(20)
 
 func _notification(what):
+	return
+	
 	if what == MainLoop.NOTIFICATION_WM_QUIT_REQUEST:
 		stop()
