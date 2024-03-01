@@ -1,0 +1,24 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/sounds/dog_woke_up/192235__ligidium__miniature-dachshunds-playing_1_woke_up.ogg" type="AudioStream" id=1]
+[ext_resource path="res://assets/sounds/dog_woke_up/479627__craigsmith__r01-50-dog-playing.ogg" type="AudioStream" id=2]
+[ext_resource path="res://assets/sounds/dog_woke_up/20240222_183917_36_charlie.ogg" type="AudioStream" id=3]
+[ext_resource path="res://assets/sounds/dog_woke_up/20240229_093700_46_charlie.ogg" type="AudioStream" id=4]
+[ext_resource path="res://scenes/PlayerLostSounds.gd" type="Script" id=5]
+
+[node name="PlayerLostSounds" type="Node"]
+script = ExtResource( 5 )
+
+[node name="RandomSounds" type="Node" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="RandomSounds"]
+stream = ExtResource( 1 )
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="RandomSounds"]
+stream = ExtResource( 2 )
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="RandomSounds"]
+stream = ExtResource( 3 )
+
+[node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="RandomSounds"]
+stream = ExtResource( 4 )

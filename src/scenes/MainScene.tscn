@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://scenes/TitleOverlay.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/MainScene.gd" type="Script" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://scenes/BackgroundEffectsMenu.tscn" type="PackedScene" id=5]
 [ext_resource path="res://scenes/BackgroundEffectsLevel.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/BackgroundEffectsExcited.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/PlayerLostSounds.tscn" type="PackedScene" id=8]
 
 [node name="MainScene" type="Node"]
 script = ExtResource( 2 )
@@ -34,6 +35,8 @@ current = true
 [node name="BackgroundEffectsLevel" parent="." instance=ExtResource( 6 )]
 
 [node name="BackgroundEffectsExcited" parent="." instance=ExtResource( 7 )]
+
+[node name="PlayerLostSounds" parent="." instance=ExtResource( 8 )]
 
 [node name="SceneLoaderTimer" type="Timer" parent="."]
 wait_time = 0.1

@@ -79,6 +79,7 @@ func on_player_lost():
 	clear_sounds()
 	# to give a bit of time for the excited dogs sound :)
 	$PlayerLostNarrationTimer.start()
+	$PlayerLostSounds.play()
 	GameState.state = GameState.GAME_STATE_LOST
 	Signals.emit_signal("background_sounds_to_excited")
 
