@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/192235__ligidium__miniature-dachshunds-playing_1_woke_up.ogg-6edaf815b167e4e8aa3445c5d37ae164.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/dog_woke_up/192235__ligidium__miniature-dachshunds-playing_1_woke_up.ogg"
+dest_files=[ "res://.import/192235__ligidium__miniature-dachshunds-playing_1_woke_up.ogg-6edaf815b167e4e8aa3445c5d37ae164.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

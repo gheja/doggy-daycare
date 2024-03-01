@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/479627__craigsmith__r01-50-dog-playing.ogg-e3fa198f53911cb283c66d09149c5f18.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/dog_woke_up/479627__craigsmith__r01-50-dog-playing.ogg"
+dest_files=[ "res://.import/479627__craigsmith__r01-50-dog-playing.ogg-e3fa198f53911cb283c66d09149c5f18.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
