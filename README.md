@@ -2,6 +2,8 @@
 
 ![Itch.io cover image of Doggy Daycare](itch_io_cover_630x500.jpg)
 
+Play it here: https://gheja.itch.io/doggy-daycare
+
 ## Original description
 
 A game for the [Games for Blind Gamers 3](https://itch.io/jam/games-for-blind-gamers-3) and [Blind Accessible Game Jam #2](https://itch.io/jam/blind-accessible-game-jam-2).
