@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/the_door_should_be_around_the_upper_right_corner_of_your_screen_1709722121_tts-1-hd_fable.ogg-7443854b5b4db648265c5950cfc40148.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/narrator/the_door_should_be_around_the_upper_right_corner_of_your_screen_1709722121_tts-1-hd_fable.ogg"
+dest_files=[ "res://.import/the_door_should_be_around_the_upper_right_corner_of_your_screen_1709722121_tts-1-hd_fable.ogg-7443854b5b4db648265c5950cfc40148.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
