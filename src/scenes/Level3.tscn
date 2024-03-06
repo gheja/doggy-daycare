@@ -109,27 +109,105 @@ position = Vector2( -350, -75 )
 [node name="BlockVerticalObject7" parent="LevelBase/LevelObjects" index="31" instance=ExtResource( 4 )]
 position = Vector2( 200, 125 )
 
-[node name="BlockMiddleObject5" parent="LevelBase/LevelObjects" index="32" instance=ExtResource( 6 )]
-position = Vector2( 400, -25 )
+[node name="BlockMiddleObject7" parent="LevelBase/LevelObjects" index="32" instance=ExtResource( 6 )]
+position = Vector2( 350, -175 )
 
-[node name="BlockMiddleObject6" parent="LevelBase/LevelObjects" index="33" instance=ExtResource( 6 )]
-position = Vector2( 400, -75 )
+[node name="BlockMiddleObject8" parent="LevelBase/LevelObjects" index="33" instance=ExtResource( 6 )]
+position = Vector2( 350, -75 )
 
-[node name="BlockMiddleObject7" parent="LevelBase/LevelObjects" index="34" instance=ExtResource( 6 )]
-position = Vector2( 450, -150 )
+[node name="BlockMiddleObject9" parent="LevelBase/LevelObjects" index="34" instance=ExtResource( 6 )]
+position = Vector2( 300, -25 )
 
-[node name="SqueakyObject" parent="LevelBase/LevelObjects" index="35" instance=ExtResource( 7 )]
+[node name="BlockMiddleObject10" parent="LevelBase/LevelObjects" index="35" instance=ExtResource( 6 )]
+position = Vector2( 275, 50 )
+
+[node name="BlockMiddleObject11" parent="LevelBase/LevelObjects" index="36" instance=ExtResource( 6 )]
+position = Vector2( 200, 75 )
+
+[node name="BlockMiddleObject12" parent="LevelBase/LevelObjects" index="37" instance=ExtResource( 6 )]
+position = Vector2( 175, 150 )
+
+[node name="BlockMiddleObject13" parent="LevelBase/LevelObjects" index="38" instance=ExtResource( 6 )]
+position = Vector2( 75, 150 )
+
+[node name="BlockMiddleObject14" parent="LevelBase/LevelObjects" index="39" instance=ExtResource( 6 )]
+position = Vector2( -25, 150 )
+
+[node name="BlockMiddleObject15" parent="LevelBase/LevelObjects" index="40" instance=ExtResource( 6 )]
+position = Vector2( -125, 150 )
+
+[node name="BlockMiddleObject16" parent="LevelBase/LevelObjects" index="41" instance=ExtResource( 6 )]
+position = Vector2( -150, 125 )
+
+[node name="BlockMiddleObject17" parent="LevelBase/LevelObjects" index="42" instance=ExtResource( 6 )]
+position = Vector2( -225, 150 )
+
+[node name="BlockMiddleObject18" parent="LevelBase/LevelObjects" index="43" instance=ExtResource( 6 )]
+position = Vector2( -325, 150 )
+
+[node name="BlockMiddleObject19" parent="LevelBase/LevelObjects" index="44" instance=ExtResource( 6 )]
+position = Vector2( -350, -25 )
+
+[node name="BlockMiddleObject20" parent="LevelBase/LevelObjects" index="45" instance=ExtResource( 6 )]
+position = Vector2( -350, -125 )
+
+[node name="BlockMiddleObject21" parent="LevelBase/LevelObjects" index="46" instance=ExtResource( 6 )]
+position = Vector2( -275, -150 )
+
+[node name="BlockMiddleObject22" parent="LevelBase/LevelObjects" index="47" instance=ExtResource( 6 )]
+position = Vector2( -250, -25 )
+
+[node name="BlockMiddleObject23" parent="LevelBase/LevelObjects" index="48" instance=ExtResource( 6 )]
+position = Vector2( -100, -125 )
+
+[node name="BlockMiddleObject24" parent="LevelBase/LevelObjects" index="49" instance=ExtResource( 6 )]
+position = Vector2( -175, -150 )
+
+[node name="BlockMiddleObject25" parent="LevelBase/LevelObjects" index="50" instance=ExtResource( 6 )]
+position = Vector2( -100, -175 )
+
+[node name="BlockMiddleObject26" parent="LevelBase/LevelObjects" index="51" instance=ExtResource( 6 )]
+position = Vector2( -75, -200 )
+
+[node name="BlockMiddleObject27" parent="LevelBase/LevelObjects" index="52" instance=ExtResource( 6 )]
+position = Vector2( 25, -200 )
+
+[node name="BlockMiddleObject28" parent="LevelBase/LevelObjects" index="53" instance=ExtResource( 6 )]
+position = Vector2( 125, -200 )
+
+[node name="BlockMiddleObject29" parent="LevelBase/LevelObjects" index="54" instance=ExtResource( 6 )]
+position = Vector2( 225, -200 )
+
+[node name="BlockMiddleObject30" parent="LevelBase/LevelObjects" index="55" instance=ExtResource( 6 )]
+position = Vector2( 325, -200 )
+
+[node name="BlockMiddleObject31" parent="LevelBase/LevelObjects" index="56" instance=ExtResource( 6 )]
+position = Vector2( 175, -50 )
+
+[node name="BlockMiddleObject32" parent="LevelBase/LevelObjects" index="57" instance=ExtResource( 6 )]
+position = Vector2( 100, -25 )
+
+[node name="BlockMiddleObject33" parent="LevelBase/LevelObjects" index="58" instance=ExtResource( 6 )]
+position = Vector2( 75, -50 )
+
+[node name="BlockMiddleObject34" parent="LevelBase/LevelObjects" index="59" instance=ExtResource( 6 )]
+position = Vector2( -50, 25 )
+
+[node name="BlockMiddleObject35" parent="LevelBase/LevelObjects" index="60" instance=ExtResource( 6 )]
+position = Vector2( -75, -50 )
+
+[node name="SqueakyObject" parent="LevelBase/LevelObjects" index="61" instance=ExtResource( 7 )]
 position = Vector2( 0, -50 )
 
-[node name="SqueakyObject3" parent="LevelBase/LevelObjects" index="36" instance=ExtResource( 7 )]
+[node name="SqueakyObject3" parent="LevelBase/LevelObjects" index="62" instance=ExtResource( 7 )]
 position = Vector2( 250, -150 )
 
-[node name="SqueakyObject2" parent="LevelBase/LevelObjects" index="37" instance=ExtResource( 7 )]
+[node name="SqueakyObject2" parent="LevelBase/LevelObjects" index="63" instance=ExtResource( 7 )]
 position = Vector2( -250, 100 )
 
-[node name="GoalObject" parent="LevelBase/LevelObjects" index="38" instance=ExtResource( 5 )]
+[node name="GoalObject" parent="LevelBase/LevelObjects" index="64" instance=ExtResource( 5 )]
 position = Vector2( -375, 100 )
 
-[node name="PlayerCharacter" parent="LevelBase/LevelObjects" index="39" instance=ExtResource( 2 )]
+[node name="PlayerCharacter" parent="LevelBase/LevelObjects" index="65" instance=ExtResource( 2 )]
 
 [editable path="LevelBase"]
