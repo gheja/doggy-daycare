@@ -18,6 +18,7 @@ var texts = [
 		[ "You just realized you played all afternoon and it's dark now and you're starving.", preload("res://assets/sounds/narrator/you_just_realized_you_played_all_afternoon_and_it_s_dark_now_and_you_re_starving_1709260357_tts-1-hd_fable.ogg") ],
 		[ "The food is in the kitchen, across the hallway.", preload("res://assets/sounds/narrator/the_food_is_in_the_kitchen_across_the_hallway_1709260369_tts-1-hd_fable.ogg") ],
 		[ "You are in the middle of the room, try to reach the door without waking anyone up.", preload("res://assets/sounds/narrator/you_are_in_the_middle_of_the_room_try_to_reach_the_door_without_waking_anyone_up_1709261333_tts-1-hd_fable.ogg") ],
+		[ "The door should be around the lower right corner of your screen.", preload("res://assets/sounds/narrator/the_door_should_be_around_the_lower_right_corner_of_your_screen_1709722098_tts-1-hd_fable.ogg") ],
 		[ "Good luck!", preload("res://assets/sounds/narrator/good_luck_1709260391_tts-1-hd_fable.ogg") ],
 	],
 	[ # 4 - finger locked (during level)
@@ -45,11 +46,27 @@ var texts = [
 		[ "You just finished all levels, you are awesome!", preload("res://assets/sounds/narrator/you_just_finished_all_levels_you_are_awesome_1709261445_tts-1-hd_fable.ogg") ],
 		[ "Thank you so much for playing!", preload("res://assets/sounds/narrator/thank_you_so_much_for_playing_1709260491_tts-1-hd_fable.ogg") ],
 	],
-	[ # 11 - finger locked (all levels, except first)
+	[ # 11 - finger locked, level 1
 		[ "Thanks!", preload("res://assets/sounds/narrator/thanks_1709260333_tts-1-hd_fable.ogg") ],
 		[ "You are in the middle of the room, try to reach the door without waking anyone up.", preload("res://assets/sounds/narrator/you_are_in_the_middle_of_the_room_try_to_reach_the_door_without_waking_anyone_up_1709261333_tts-1-hd_fable.ogg") ],
-	]
+		[ "The door should be around the lower right corner of your screen.", preload("res://assets/sounds/narrator/the_door_should_be_around_the_lower_right_corner_of_your_screen_1709722098_tts-1-hd_fable.ogg") ],
+	],
+	[ # 12 - finger locked, level 2
+		[ "Thanks!", preload("res://assets/sounds/narrator/thanks_1709260333_tts-1-hd_fable.ogg") ],
+		[ "You are in the middle of the room, try to reach the door without waking anyone up.", preload("res://assets/sounds/narrator/you_are_in_the_middle_of_the_room_try_to_reach_the_door_without_waking_anyone_up_1709261333_tts-1-hd_fable.ogg") ],
+		[ "The door should be around the upper left corner of your screen.", preload("res://assets/sounds/narrator/the_door_should_be_around_the_upper_left_corner_of_your_screen_1709722165_tts-1-hd_fable.ogg") ],
+	],
+	[ # 13 - finger locked, level 3
+		[ "Thanks!", preload("res://assets/sounds/narrator/thanks_1709260333_tts-1-hd_fable.ogg") ],
+		[ "You are in the middle of the room, try to reach the door without waking anyone up.", preload("res://assets/sounds/narrator/you_are_in_the_middle_of_the_room_try_to_reach_the_door_without_waking_anyone_up_1709261333_tts-1-hd_fable.ogg") ],
+		[ "The door should be around the lower left corner of your screen.", preload("res://assets/sounds/narrator/the_door_should_be_around_the_lower_left_corner_of_your_screen_1709722143_tts-1-hd_fable.ogg") ],
+	],
 ]
+
+#[ "The door should be around the lower right corner of your screen.", preload("res://assets/sounds/narrator/the_door_should_be_around_the_lower_right_corner_of_your_screen_1709722098_tts-1-hd_fable.ogg") ],
+#[ "The door should be around the upper right corner of your screen.", preload("res://assets/sounds/narrator/the_door_should_be_around_the_upper_right_corner_of_your_screen_1709722121_tts-1-hd_fable.ogg") ],
+#[ "The door should be around the lower left corner of your screen.", preload("res://assets/sounds/narrator/the_door_should_be_around_the_lower_left_corner_of_your_screen_1709722143_tts-1-hd_fable.ogg") ],
+#[ "The door should be around the upper left corner of your screen.", preload("res://assets/sounds/narrator/the_door_should_be_around_the_upper_left_corner_of_your_screen_1709722165_tts-1-hd_fable.ogg") ],
 
 var text_index = -1
 var text_sentence_index = -1

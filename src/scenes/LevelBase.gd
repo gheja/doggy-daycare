@@ -2,6 +2,7 @@ extends Node2D
 
 export var level_intro_text_index = 5
 export var level_first_lock_text_index = 11
+export var level_subsequent_lock_text_index = 11
 
 var was_started = false
 
@@ -17,7 +18,7 @@ func _ready():
 		# level intro message (long)
 		Lib.get_narrator_object().speak_text(level_intro_text_index)
 	else:
-		# generic message (short)
+		# levle intro message (shorter)
 		Lib.get_narrator_object().speak_text(6)
 	
 	$CameraContainer/Camera2D.current = true
@@ -30,7 +31,7 @@ func play_resume():
 			Lib.get_narrator_object().speak_text(level_first_lock_text_index)
 			GameState.first_play_on_this_level = false
 		else:
-			Lib.get_narrator_object().speak_text(11)
+			Lib.get_narrator_object().speak_text(level_subsequent_lock_text_index)
 	else:
 		# "thanks"
 		Lib.get_narrator_object().speak_text(4)

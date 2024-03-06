@@ -11,6 +11,8 @@
 
 [node name="LevelBase" parent="." instance=ExtResource( 1 )]
 level_intro_text_index = 8
+level_first_lock_text_index = 12
+level_subsequent_lock_text_index = 12
 
 [node name="BlockHorizontalObject3" parent="LevelBase/LevelObjects" index="0" instance=ExtResource( 3 )]
 position = Vector2( 25, 75 )
