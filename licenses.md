@@ -534,6 +534,21 @@ License: Creative Commons 0
 
 Link: https://freesound.org/people/mudflea2/sounds/705722/
 
+---
+
+Files:
+  - src/assets/sounds/459970__florianreichelt__footsteps-on-hollow-wood_1.ogg
+  - src/assets/sounds/459970__florianreichelt__footsteps-on-hollow-wood_2.ogg
+
+Title: Footsteps on hollow wood
+
+Author: florianreichelt
+
+License: Creative Commons 0
+
+Link: https://freesound.org/people/florianreichelt/sounds/459970/
+
+
 ### Audio narration by OpenAI TTS
 
 Files:
