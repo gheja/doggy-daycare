@@ -4,7 +4,7 @@
 [ext_resource path="res://assets/sounds/dog_woke_up/479627__craigsmith__r01-50-dog-playing.ogg" type="AudioStream" id=2]
 [ext_resource path="res://assets/sounds/dog_woke_up/20240222_183917_36_charlie.ogg" type="AudioStream" id=3]
 [ext_resource path="res://assets/sounds/dog_woke_up/20240229_093700_46_charlie.ogg" type="AudioStream" id=4]
-[ext_resource path="res://scenes/PlayerLostSounds.gd" type="Script" id=5]
+[ext_resource path="res://scenes/RandomSoundsPlayerCommon.gd" type="Script" id=5]
 
 [node name="PlayerLostSounds" type="Node"]
 script = ExtResource( 5 )

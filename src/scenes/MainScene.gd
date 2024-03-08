@@ -26,6 +26,7 @@ func _ready():
 	Signals.connect("background_sounds_to_menu", self, "on_background_sounds_to_menu")
 	Signals.connect("background_sounds_to_level", self, "on_background_sounds_to_level")
 	Signals.connect("background_sounds_to_excited", self, "on_background_sounds_to_excited")
+	Signals.connect("dog_reached", self, "on_dog_reached")
 	
 	load_scene_deferred("res://scenes/IntroScene.tscn")
 
@@ -156,3 +157,6 @@ func _on_LevelLoadTimer_timeout():
 
 func _on_PlayerLostNarrationTimer_timeout():
 	Lib.get_narrator_object().speak_text(2)
+
+func on_dog_reached():
+	$PlayerNearDogSounds.play()

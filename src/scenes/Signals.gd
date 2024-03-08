@@ -6,6 +6,7 @@ signal first_game_started
 signal game_starting
 signal finger_locked
 signal finger_unlocked
+signal dog_reached
 
 signal speech_finished_sentence
 signal speech_finished_text
