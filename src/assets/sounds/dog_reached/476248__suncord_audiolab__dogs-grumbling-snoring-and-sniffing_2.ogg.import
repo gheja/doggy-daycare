@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/476248__suncord_audiolab__dogs-grumbling-snoring-and-sniffing_2.ogg-684eb70d7363861961fc7998bcad091a.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/dog_reached/476248__suncord_audiolab__dogs-grumbling-snoring-and-sniffing_2.ogg"
+dest_files=[ "res://.import/476248__suncord_audiolab__dogs-grumbling-snoring-and-sniffing_2.ogg-684eb70d7363861961fc7998bcad091a.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
