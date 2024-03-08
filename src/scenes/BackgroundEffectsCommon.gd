@@ -19,7 +19,7 @@ func fade_in():
 
 func fade_out():
 	volume_target = volume_min
-	random_sound_chance = random_chance_min
+	random_sound_chance_target = random_chance_min
 
 #func ramp_up():
 #	random_sound_chance_target = 1.0
