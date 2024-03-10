@@ -33,7 +33,7 @@ autowrap = true
 bus = "narrator"
 
 [node name="SpeakTimer" type="Timer" parent="."]
-wait_time = 0.2
+wait_time = 0.05
 one_shot = true
 
 [connection signal="timeout" from="SpeakTimer" to="." method="_on_SpeakTimer_timeout"]
